@@ -10,24 +10,16 @@ body {
     text-align: start;
     margin: 0;
     padding: 0;
-
 }
 
-
 #container {
-
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
     top: 0;
     width: 91.5vw;
     background-color: white;
-    min-height:99%;
-}
-
-#lo {
-    margin-top: 0;
-    margin-bottom: 0;
+    min-height: 99%;
 }
 
 .header {
@@ -52,26 +44,21 @@ body {
     display: block;
     text-align: center;
     margin-top: 10px;
+}
 
-}
-#app {
- float: right;
-    margin-right: 17%;
-    margin-top: 417px;
-    height: 1vh;
-}
 .sidebar {
     float: left;
     margin-left: 50px;
     width: 18%;
 }
+
 .sidebar2 {
     float: left;
     margin-left: 50px;
     width: 18%;
     height: 100vh;
     position: sticky;
-    top:0;
+    top: 0;
 }
 
 .main {
@@ -80,11 +67,11 @@ body {
     margin-right: 0.1vw;
     margin-bottom: 50px;
     min-width: 65%;
-    max-width:72%;
+    max-width: 72%;
 }
 .main2 { /*wide version of main */
     margin: 30px 60px 50px;
-    max-width: 1400px;
+    max-width: 95%;
 }
 
 a.nav, a.nav:active, a.nav:visited, a.nav:link {
@@ -100,12 +87,7 @@ a.nav:hover {
     color: #009fff;
     border-bottom: 4px #009fff;
     text-decoration: none;
-    font-family: "century gothic", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    padding-right: 10%;
 }
-
 a.nav2, a.nav2:active, a.nav2:visited, a.nav2:link {
     color: #974bca;
     text-decoration: none;
@@ -122,7 +104,6 @@ a.nav2:hover {
     font-weight: bold;
     font-size: 18px;
 }
-
 a, a:active, a:visited, a:link {
     color: #974bca;
     text-decoration: none;
@@ -133,7 +114,6 @@ a:hover {
     border-bottom: 4px #009fff;
     text-decoration: none;
 }
-
 b, strong {
     color: #8a3daf;
     text-decoration: -moz-mac-accentdarkshadow;
@@ -150,29 +130,28 @@ u {
     text-decoration: none;
 }
 
-
 h1 {
     font-family: "century gothic", sans-serif;
     font-size: 22px;
     text-align: left;
-    letter-spacing: 0;
     color: #622291;
     border-bottom: 2px dashed #009fff;
     padding-top: 10px;
     margin-bottom: 5px;
     padding-bottom: 10px;
 }
-h2{
+
+h2 {
     font-family: "century gothic", sans-serif;
     font-size: 20px;
     text-align: left;
-    letter-spacing: 0;
     color: #622291;
     padding-top: 3px;
     margin-bottom: 3px;
     display: flex;
     align-items: center;
 }
+
 h2::after {
     content: '';
     flex: 1;
@@ -180,7 +159,8 @@ h2::after {
     height: 2px;
     background: linear-gradient(to right, rgba(175, 163, 234, 1), rgba(255, 183, 155, 1)) no-repeat;
 }
-h3{
+
+h3 {
     font-family: "century gothic", sans-serif;
     color: #974bca;
     font-size: 17px;
@@ -193,63 +173,19 @@ h4{
     font-weight: bold;
     margin-bottom: 0;
 }
-hr{
+
+hr {
     border-top: dashed #009fff 2px;
     border-bottom: none;
 }
 
-table {
-    border:1px solid #622291;
-    border-collapse: collapse;
-}
- td{
-     border:1px solid #622291;
-     border-collapse: collapse;
-     padding: 5px 10px;
-    word-wrap: break-word;
-    max-width: 300px;
-}
- th{
-     border:1px solid #622291;
-     border-collapse: collapse;
-     padding: 5px 10px;
-     text-align: left;
-    color: #622291;
-    background-color: #d8a4ff;
-}
-.material-icons {
-    font-size: 28px;
-    color: #dd25ff;
-}
-.image-align{
-    display:flex;
-    flex-direction: row;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 32%;
-    max-width: 33%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.responsive-image {
+    padding: 20px 10px;
     width: 100%;
-}
-
-#footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    text-align: center;
-    text-align-all: center;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 .image-right{
     float:right;
@@ -259,5 +195,112 @@ table {
     font-size: 0;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 14px;
+    color: #622291;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #622291;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #622291;
+    padding: 5px 10px;
+    word-wrap: break-word;
+}
+
+th {
+    text-align: left;
+    color: #622291;
+    background-color: #d8a4ff;
+}
+.image-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Space between image and iframe */
+    margin: 20px 0;
+}
+
+.image-align img,
+.image-align iframe {
+    width: 48%; /* Set a percentage width for balance */
+    height: auto; /* Ensure proper aspect ratio for images */
+}
+
+.image-align iframe {
+    aspect-ratio: 16 / 9; /* Maintain a 16:9 ratio for the iframe */
+    height: auto; /* Ensure the height adjusts properly */
+}
 
 
+@media screen and (max-width: 768px) {
+    .sidebar2 {
+        display: none;
+    }
+
+    .main {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .responsive-image {
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+    .image-align {
+        flex-direction: column; /* Stack image and iframe vertically */
+        gap: 10px; /* Reduce space between stacked items */
+    }
+
+    .image-align img,
+    .image-align iframe {
+        width: 100%; /* Use full width for both on smaller screens */
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 1.2rem; /* Relative to the root font size, scales with the base */
+        line-height: 1.6rem; /* Matches proportional line height */
+    }
+
+    h1 {
+        font-size: 2.25rem; /* Responsive scaling for headers */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 1rem; /* Adjusts table text size */
+    }
+    .image-align img,
+    .image-align iframe {
+        width: 48%; /* Maintain proportional size on larger screens */
+    }
+
+    .responsive-image {
+        max-width: 800px;
+    }
+}
