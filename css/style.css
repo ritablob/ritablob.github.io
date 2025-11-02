@@ -5,7 +5,7 @@ html {
 
 body {
     font-family: "century gothic", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     text-align: start;
     margin: 0;
@@ -80,6 +80,7 @@ a.nav, a.nav:active, a.nav:visited, a.nav:link {
     font-family: "century gothic", sans-serif;
     font-weight: bold;
     padding-right: 10%;
+    font-size: 16px;
 }
 
 a.nav:hover {
@@ -267,22 +268,25 @@ th {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1921px) {
     body {
         font-size: 1.2rem; /* Relative to the root font size, scales with the base */
         line-height: 1.6rem; /* Matches proportional line height */
     }
 
     h1 {
-        font-size: 2.25rem; /* Responsive scaling for headers */
+        font-size: 2rem; /* Responsive scaling for headers */
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+    a.nav, a.nav:active, a.nav:visited, a.nav:link {
+        font-size: 1.4rem;
     }
     
     .image-align img,
