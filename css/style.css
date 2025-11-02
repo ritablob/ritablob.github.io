@@ -4,8 +4,8 @@ html {
 }
 
 body {
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 15px;
+    font-family: "century gothic", sans-serif;
+    font-size: 12px;
     line-height: 20px;
     text-align: start;
     margin: 0;
@@ -79,7 +79,6 @@ a.nav, a.nav:active, a.nav:visited, a.nav:link {
     text-decoration: none;
     font-family: "century gothic", sans-serif;
     font-weight: bold;
-    font-size: 18px;
     padding-right: 10%;
 }
 
@@ -93,7 +92,6 @@ a.nav2, a.nav2:active, a.nav2:visited, a.nav2:link {
     text-decoration: none;
     font-family: "century gothic", sans-serif;
     font-weight: bold;
-    font-size: 18px;
 }
 
 a.nav2:hover {
@@ -102,7 +100,6 @@ a.nav2:hover {
     text-decoration: none;
     font-family: "century gothic", sans-serif;
     font-weight: bold;
-    font-size: 18px;
 }
 a, a:active, a:visited, a:link {
     color: #974bca;
@@ -113,12 +110,10 @@ a:hover {
     color: #009fff;
     border-bottom: 4px #009fff;
     text-decoration: none;
+    font-style: oblique;
 }
 b, strong {
     color: #8a3daf;
-    text-decoration: -moz-mac-accentdarkshadow;
-    font-family: "century gothic", sans-serif;
-    font-size: 15px;
 }
 
 i, em {
@@ -202,8 +197,6 @@ footer {
     text-align: center;
     background-color: #f8f8f8;
     padding: 10px 0;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 14px;
     color: #622291;
 }
 
@@ -291,10 +284,7 @@ th {
     h3 {
         font-size: 1.5rem;
     }
-
-    table {
-        font-size: 1rem; /* Adjusts table text size */
-    }
+    
     .image-align img,
     .image-align iframe {
         width: 48%; /* Maintain proportional size on larger screens */
